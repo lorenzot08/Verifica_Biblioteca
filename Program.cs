@@ -28,6 +28,7 @@
                     case 1:
                         b1.AggiuntaLibro(l1);
                         b1.AggiuntaLibro(l2);
+                        Console.WriteLine("Libri aggiunti correttamente!");
                         break;
 
                     case 2:
