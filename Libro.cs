@@ -31,6 +31,18 @@ namespace Verifica_Git_Biblioteca
         {
             return $"L'autore del libro è: {Autore}, il titolo è: {Titolo}, l'anno di pubblicazione è: {AnnoPubblicazione}, l'editore è: {Editore}, le pagine totali sono: {NumPagine}";
         }
+        public string ReadingTime()
+        {
+            string ore="0h";
+            if (NumPagine < 100)
+                ore = "1h";
+            else if (NumPagine <= 200)
+                ore = "2h";
+            else
+                ore=">2h";
+            return ore ;
+
+        }
     }
 }
 
