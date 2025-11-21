@@ -58,7 +58,7 @@
                         Console.WriteLine("Scelta non valida.");
                         break;
                 }
-            } while (scelta!=5);
+            } while (scelta!=5);// uso un do-while perchè così l'utente può effettuare diverse scelte
             Console.WriteLine(l1);
             Console.WriteLine(l2);
             Console.WriteLine(b1);
