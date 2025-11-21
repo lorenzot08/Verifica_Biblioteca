@@ -22,7 +22,7 @@
                 Console.Write("Scelta: ");
 
                 scelta = int.Parse(Console.ReadLine());
-
+                //Uso uno swithc per creare un menù come una sorta di interfaccia che consente all'utente di interagire
                 switch (scelta)
                 {
                     case 1:
