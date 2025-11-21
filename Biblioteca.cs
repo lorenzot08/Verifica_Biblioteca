@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,6 +43,27 @@ namespace Verifica_Git_Biblioteca
             }
             return LibriTrovatiTitolo;
         }
-
+        public List<Libro> CercaAutore(string autore)
+        {
+            List<Libro> LibriTrovatiAutore = new List<Libro>();
+            foreach (Libro libro in Libri)
+            {
+                if (libro.Autore.Contains(autore))
+                {
+                    LibriTrovatiAutore.Add(libro);
+                }
+            }
+            if (LibriTrovatiAutore.Count == 0)
+            {
+                Console.WriteLine("Non sono stati trovati libri di questo autore");
+            }
+            return LibriTrovatiAutore;
+        }
+        public int NumeroLibri()
+        {
+            int num;
+            num = Libri.Count();
+            return num;
+        }
     }
 }
