@@ -65,5 +65,10 @@ namespace Verifica_Git_Biblioteca
             num = Libri.Count();
             return num;
         }
+
+        public override string ToString()
+        {
+            return $"La biblioteca si chiama: {Nome}, si trova a: {Indirizzo}, apre alle: {OrarioApertura} e chiude alle: {OrarioChiusura}";
+        }
     }
 }
